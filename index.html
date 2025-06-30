@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chat App</title>
+    <style>
+        body {
+            font-family: Arial;
+
+        }
+
+        #messages {
+            height: 250px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 50%;
+            display: block;
+            margin: 2px auto;
+            border: 1px solid black;
+
+        }
+
+        #messages div {
+            background-color: blue;
+            width: 50%;
+            padding: 3px 6px;
+            border-radius: 3px;
+            font-size: 16px;
+            color: white;
+            font-weight: bold;
+            margin: 3px 0px;
+        }
+
+        #msg-button {
+            border: 2px solid #007b1f;
+            width: 111px;
+            padding: 10px;
+            margin: 7px 3px;
+            background: green;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .container{
+            display: block;
+            margin: 2px auto;
+            width: 52%;
+        }
+        #msgInput{
+            padding: 8px 10px;
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Chat Server</h2>
+    <div id="messages"></div>
+    <div class="container">
+        <input type="text" id="msgInput" placeholder="Type a message..." />
+        <button id="msg-button" onclick="sendMessage()">Send</button>
+    </div>
+
+
+    <script src="client.js"></script>
+</body>
+
+</html>
